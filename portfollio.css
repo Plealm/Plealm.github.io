@@ -259,6 +259,13 @@ header h3 {
   z-index: -1;
   /* Ensure div tag stays behind content; -999 might work, too. */
 }
+#project4 {
+  grid-column: 1;
+  grid-row: 2;
+
+  z-index: -1;
+  /* Ensure div tag stays behind content; -999 might work, too. */
+}
 .project_stretch {
   position: right;
   width: 100%;
