@@ -1,152 +1,253 @@
 <!DOCTYPE html>
-<html>
-  <link rel="stylesheet" type="text/css" href="portfollio.css">
-<!-- START BACKGROUND IMAGES -->
-<div class="background_grid">
-  
-  <div id="background1">
-  <img 
-  class="background_stretch" 
-  src="images/imagen1.png" 
-  alt="welcome_background_image">
-  </div> 
+<html lang="en">
 
-  <div id="background2">
-    <img 
-    class="background_stretch" 
-    src="images/imagen2.jpeg" 
-    alt="portfolio_background_image">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://kit.fontawesome.com/c003666c69.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <div id="particles-js"></div>
+  <div id="background">
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="./images/Logo.png" class="logo" alt="logo">
+        <ul id="sidemenu">
+          <li> <a href="#header"> Home </a></li>
+          <li> <a href="#about"> About </a></li>
+          <li> <a href="#services"> Services </a></li>
+          <li> <a href="#projects"> Projects </a></li>
+          <li> <a href="#contact"> Contact </a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Data Science Jr & Frontend Jr</p>
+        <h1>Hi, I'm <span>Pedro</span> <br> Leal From Colombia</h1>
+      </div>
+    </div>
   </div>
   </div>
+  <!-- ABOUT -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="./images/user.png" alt="user">
+        </div>
+        <div class="about-col-2">
+          <h1 class="subtitle">About Me</h1>
+          <p>Highly organized and detail-oriented graduate from the 
+            Universidad Nacional de Colombia in Physics seeking an
+          entry-level position as a junior programmer. I have experience
+           in teamwork and remote work. I believe that respect and
+          communication are the keys to success and I consider that the data 
+          is a new era.
+            </p>
 
-
- </div> 
-<!-- END BACKGROUND IMAGES -->
-  
-  
-<!-- START NAV BAR -->
-<header id="header">
-  
- <img 
-  src="images/Final1_8x.png" 
-  alt="VD_logo" 
-  id="VD_logo"
-  height="90px"
-  width="270px";>
-    
-<nav id="navbar">
-  
-  <h3>  PLEALM 
-  &nbsp; &nbsp; &nbsp;
-   
-  <a class="nav-link" href="#welcome-section"> Hello </a> 
-  <a class="nav-link" href="#aboutme"> About me </a> 
-  <a class="nav-link" href="#projects"> Projects </a> 
-  <a class="nav-link" href="#skills"> Skills </a> 
-  <a class="nav-link" href="#certification"> Certifications </a> 
-  <a class="nav-link" href="#contact"> Contact </a> 
-  </h3> 
-              
-  </nav>
- </header>
-<!-- END NAV BAR -->
-  
-  
-<!-- START WELCOME SECTION -->
-<section id="welcome-section">
- 
-  <h1> Wenas wenitas, I am Pedro Leal,</h1>
-  <h2>Physicist that loves </h2>
-  <h2><br>to code.</h2>
-</section>
-<!-- END WELCOME SECTION -->
-  
-  
-<!-- START ABOUT ME SECTION -->
-<section id="aboutme">
-  <h3>About Me</h3>
-  <h6>
-    I am a last semester physics student
-     at the National University of Colombia. 
-     I am passionate about learning everyday,
-    specifically, learning about coding where
-     I feel more comfortable and with a lot of 
-     motivation to keep going on. I
-    believe that good team work comes with an 
-    effective communication and respect. I love 
-    to hang out with my friends and
-    travel around Colombia to see the beautiful
-     nature that it has to offer.
-  </h6>
-</section>
-<!-- END WELCOME SECTION -->
-<!-- START PROJECTS SECTION -->
-<section id="projects">
-  <h3>Projects</h3>
-
-  <div class="project-grid">
-    <div id="project1">
-      <a href="https://github.com/Plealm/Constantes_opticas_de_peliculas_delgadas">
-      <img class="project_stretch" 
-      src="images/graficaEspectro.png" 
-      alt="portfolio_background_image">
-      </a>
-    </div>
-    
-    <div id="project2">
-      <a href="https://github.com/Plealm/Proyecto_Final_W_Analysis/tree/main/Framework_C%2B%2B8TeV">
-      <img class="project_stretch" 
-      src="images/hist_etmiss_log-1.png" 
-      alt="skills_project_image">
-      </a>
-    </div>
-    
-    <div id="project3">
-      <a href="https://github.com/Plealm/FEniCS_Reaktoro">
-      <img class="project_stretch" 
-      src="images/wave_function_oscillator-1.png" 
-      alt="contact_background_image">
-      </a>
-    </div>
-    
-    <div id="project4">
-      <a href="https://plealm.github.io/product_page/">
-      <img class="project_stretch" 
-      src="images/Product.jpeg" 
-      alt="contact_background_image">
-      </a>
-    </div>
-    
-    <div id="project5">
-      <a href="https://plealm.github.io/survey_form/">
-      <img class="project_stretch" 
-      src="images/survey.jpeg" 
-      alt="contact_background_image">
-      </a>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <!--Skills-->
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span> Data management</span> <br> Python, Julia, C++, SQL and PowerBi</li>
+              <li><span> Frontend</span> <br> Html5, Css3 and JavaScript</li>
+              <li><span> Computer Science</span> <br> Matlab, Mathematica and Latex </li>
+            </ul>
+          </div>
+          <!--Experience-->
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span> 2021</span> <br> Use of python libraries to find the nonlinear regression
+                of a set of data, in addition to its statistical parameters</li>
+              <li><span> 2021</span> <br> Use Root library to analysis from CERN Data</li>
+              <li><span> 2022</span> <br> Use of the Fenics-python library for modeling physical systems
+                and their minimization.</li>
+            </ul>
+          </div>
+          <!--Education-->
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span> 2017-2022</span> <br> Physics, Universidad Nacional de Colombia (GPA: 4.2/5.0)</li>
+              <li><span> 2022</span> <br> Datacamp, Introductory courses of Data</li>
+              <li><span> 2022</span> <br> Freecodecamp, Responsive Web design</li>
+              <li><span> 2022</span> <br> Cisco, Introducción a la seguridad cibernetica</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-</section>
-<!-- END PROJECTS SECTION -->
+
+  <!--Services-->
+
+  <div id="services">
+    <div class="container">
+      <h1 class="subtitle"> My Services</h1>
+      <div class="services-list">
+
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2> Frontend Jr</h2>
+          <p>
+            I have made simple web pages in the section of frontend, showing my experience with technologies such as Html5 and CSS.
+            At the moment I am deepening my knowledge of JavaScript.
+          </p>
+          <a href="https://plealm.github.io/survey_form/"> Learn more</a>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-atom"></i>
+          <h2> Data Science Jr</h2>
+          <p>
+            Thanks to my experience with data, regression, and mathematics (statistics), which my career has given me, I can develop
+            models for data prediction, using python. Also, I have studied in Datacamp in more depth data management, data
+            visualization, and other tools for data analysis.
+          </p>
+          <a href="https://github.com/Plealm/Proyecto_Final_W_Analysis/tree/main/Framework_C%2B%2B8TeV"> Learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-infinity"></i>
+          <h2> Computer Science </h2>
+          <p>
+            I have been able to participate in 3 research processes, two of them at the international level on particle physics,
+            both theoretical and experimental, where I was able to develop complex symbolic calculations using Mathematica,
+            simulations in Matlab, data sectorization in c++ and for other needs in python.
+          </p>
+          <a href="https://github.com/Plealm/FEniCS_Reaktoro"> Learn more</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!--projects-->
+
+  <div id="projects">
+    <div class="container">
+      <h1 class="subtitle"> My projects</h1>
+      <div class="project-list">
+        <div class="project">
+          <img src="./images/work1.jpeg" alt="work1">
+          <div class="layer">
+            <h3>Product Page</h3>
+            <p>As a final project of freecodecamp course about the responsive web I developed a modest website about a hobby that I
+            enjoy anime, it is one of my first projects.</p>
+            <a href="https://plealm.github.io/product_page/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="project">
+          <img src="./images/work2.jpg" alt="work2">
+          <div class="layer">
+            <h3>Analysis Particle Collisions</h3>
+            <p>Using free data from CERN, a program was designed that using specific conditions created a sub-database which was then
+            plotted in histograms that allowed through physical knowledge to reach conclusions about the nature of the universe.</p>
+            <a href="https://github.com/Plealm/Analisis_Z_Prime"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="project">
+            <img src="./images/work3.png" alt="work3">
+          <div class="layer">
+            <h3>Mathematic Modeling</h3>
+            <p>Employing physics equations we can describe nature and with mathematical optimization, we can analyze how to save
+            materials, improve element distributions and other means to save money and obtain the same or better results.</p>
+            <a href="https://github.com/Plealm/FEniCS_Reaktoro"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="https://github.com/Plealm" class="btn">See more</a>
+    </div>
+  </div>
+
+  <!--Contact-->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="subtitle">Contact Me</h1>
+          <p><i class="fa-solid fa-envelope"></i>plealmprog@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i> + 57 3244662161</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/pedro.leal.9678/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://github.com/Plealm"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/pedroleal293/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/pedro-jose-leal-mesa-57b880231/"><i class="fa-brands fa-linkedin"></i></a>
+
+          </div>
+          <a href="./images/CV.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form method="POST"
+            action="https://script.google.com/macros/s/AKfycby_BgeqKaxiYwB4U5ptGRIZFWEbmbBnIjRxUFIrGlNv5DtH7d6RAdPm2g_Htx7TKKHQ/exec">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="text" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+
+  </script>
+
+  <script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+    }
+
+  </script>
+
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxrQfEuDQlu1Rjh6w9x5rimwAhv8ndX6q5MsQEWAx1o8_GJ2zQdTvDADK9tjfFVPNPs/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
   
-  
-  
-<!-- START SKILL SECTION -->
-<section id="skills">
-<h3>My Skills</h3>
-</section>
-<!-- END SKILL SECTION -->
- 
-<!-- START CERTIFICATION SECTION -->
-<section id="certification">
-  <h3>Certifications</h3>
-</section>
-<!-- END CERTIFICATION SECTION -->
-  
-  
-<!-- START CONTACT SECTION -->
-<section id="contact">
-<h3>Contact</h3>
-  <p>Prueba</p>
-</section>
-<!-- END CONTACT SECTION -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="./Js/particles.js"></script>
+
+</body>
+
 </html>
