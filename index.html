@@ -19,18 +19,19 @@
       <nav>
         <img src="./images/Logo.png" class="logo" alt="logo">
         <ul id="sidemenu">
-          <li> <a href="#header"> Home </a></li>
-          <li> <a href="#about"> About </a></li>
-          <li> <a href="#services"> Services </a></li>
-          <li> <a href="#projects"> Projects </a></li>
-          <li> <a href="#contact"> Contact </a></li>
+          <li> <a href="#header"> Inicio </a></li>
+          <li> <a href="#about"> Sobre mi </a></li>
+          <li> <a href="#services"> Áreas De Conocimiento </a></li>
+          <li> <a href="#projects"> Proyectos </a></li>
+          <li> <a href="#publicaciones"> Publicaciones </a></li>
+          <li> <a href="#contact"> Contacto </a></li>
           <i class="fas fa-times" onclick="closemenu()"></i>
         </ul>
         <i class="fas fa-bars" onclick="openmenu()"></i>
       </nav>
       <div class="header-text">
-        <p>Data Science Jr & Frontend Jr</p>
-        <h1>Hi, I'm <span>Pedro</span> <br> Leal From Colombia</h1>
+        <p>Analista de Datos Jr  &<br> Cientifico de Datos Jr</p>
+        <h1>Hola,<br> Soy <span>Pedro</span> Leal <br>desde Colombia.</h1>
       </div>
     </div>
   </div>
@@ -43,45 +44,50 @@
           <img src="./images/user.png" alt="user">
         </div>
         <div class="about-col-2">
-          <h1 class="subtitle">About Me</h1>
-          <p>Highly organized and detail-oriented graduate from the 
-            Universidad Nacional de Colombia in Physics seeking an
-          entry-level position as a junior programmer. I have experience
-           in teamwork and remote work. I believe that respect and
-          communication are the keys to success and I consider that the data 
-          is a new era.
+          <h1 class="subtitle">Sobre mi</h1>
+          <p>Soy un físico con experiencia por medio de proyectos en modelación, análisis descriptivo e inferencial de datos, brindando
+            insights a empresas para su desarrollo. Soy responsable de mantener la integridad de los datos manteniendo su fidelidad,
+            realizando visualizaciones y análisis probabilísticos profundos para encontrar tendencias o correlaciones que conduzcan a
+            una toma de decisiones informada usando las ultimas tecnologías en el mercado.
             </p>
 
           <div class="tab-titles">
-            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-            <p class="tab-links" onclick="opentab('experience')">Experience</p>
-            <p class="tab-links" onclick="opentab('education')">Education</p>
+            <p class="tab-links active-link" onclick="opentab('skills')">Habilidades</p>
+            <p class="tab-links" onclick="opentab('experience')">Experiencia</p>
+            <p class="tab-links" onclick="opentab('education')">Educación</p>
           </div>
           <!--Skills-->
           <div class="tab-contents active-tab" id="skills">
             <ul>
-              <li><span> Data management</span> <br> Python, Julia, C++, SQL and PowerBi</li>
-              <li><span> Frontend</span> <br> Html5, Css3 and JavaScript</li>
-              <li><span> Computer Science</span> <br> Matlab, Mathematica and Latex </li>
+              <li><span style="font-size: 20px;"> Habilidades Fuertes</span> 
+                <ul>
+                  <li>Python: Avanzado</li>
+                  <li>Excel: Intermedio</li>
+                  <li>Power Bi: Intermedio</li>
+                  <li>SQL: Intermedio</li>
+                  <li>R studio: Intermedio</li>
+                </ul>
+                <li><span style="font-size: 20px;"> Habilidades Blandas</span> 
+                  <ul>
+                    <li>Pensamiento analítico, curiosidad y aprendizaje continuo, resolución de problemas, colaboración y ética y responsabilidad</li>
+                  </ul>
             </ul>
           </div>
           <!--Experience-->
           <div class="tab-contents" id="experience">
             <ul>
-              <li><span> 2021</span> <br> Use of python libraries to find the nonlinear regression
-                of a set of data, in addition to its statistical parameters</li>
-              <li><span> 2021</span> <br> Use Root library to analysis from CERN Data</li>
-              <li><span> 2022</span> <br> Use of the Fenics-python library for modeling physical systems
-                and their minimization.</li>
+              <li><span style="font-size: 20px;"> Universidad de Paris-Saclay</span>, <br> <span>Investigador Jr</span>               Jul, 2021 a Ene, 2022 <br> <br> 
+                Analicé los nuevos datos proporcionados por el LHC y utilicé herramientas avanzadas de análisis de datos 
+                para identificar patrones y tendencias. Además, ayudé en el desarrollo de un modelo matemático preciso y eficiente para describir
+                 la unión de partículas subatómicas. Presenté los resultados a mi equipo de investigación y recibí valiosa retroalimentación que 
+                 mejoró aún más la precisión y eficiencia del modelo. </li>
             </ul>
           </div>
           <!--Education-->
           <div class="tab-contents" id="education">
             <ul>
-              <li><span> 2017-2022</span> <br> Physics, Universidad Nacional de Colombia (GPA: 4.2/5.0)</li>
-              <li><span> 2022</span> <br> Datacamp, Introductory courses of Data</li>
-              <li><span> 2022</span> <br> Freecodecamp, Responsive Web design</li>
-              <li><span> 2022</span> <br> Cisco, Introducción a la seguridad cibernetica</li>
+              <li><span style="font-size: 20px;"> Universidad Nacional de Colombia</span>, <br> <span>Fisico</span>  Ene, 2017 a Nov, 2022 <br> <br> </li>
+              <li><span style="font-size: 20px;"> Bogota Institute Technology (BIT)</span>, <br> <span>Bootcamp Analista de Datos</span>  May, 2023</li>
             </ul>
           </div>
         </div>
@@ -93,38 +99,44 @@
 
   <div id="services">
     <div class="container">
-      <h1 class="subtitle"> My Services</h1>
+      <h1 class="subtitle"> Áreas de Conocimientos</h1>
       <div class="services-list">
 
         <div>
-          <i class="fa-solid fa-code"></i>
-          <h2> Frontend Jr</h2>
+          <i class="fa-solid fa-database"></i>
+          <h2> Bases de Datos Relacionales</h2>
           <p>
-            I have made simple web pages in the section of frontend, showing my experience with technologies such as Html5 and CSS.
-            At the moment I am deepening my knowledge of JavaScript.
+            He trabajado en el diseño, creación y gestión de bases de datos para resolver problemas financieros de 
+            familiares y amigos. Automatizando cálculos y creando dashboards, he proporcionado una visualización
+             clara de sus finanzas personales, facilitando la toma de decisiones informadas y optimizando sus 
+             procesos financieros.
           </p>
-          <a href="https://plealm.github.io/survey_form/"> Learn more</a>
+          <a href="#base"> Proyectos</a>
         </div>
 
         <div>
-          <i class="fa-solid fa-atom"></i>
-          <h2> Data Science Jr</h2>
+          <i class="fa-solid fa-chart-line"></i>
+          <h2> Análisis de Datos</h2>
           <p>
-            Thanks to my experience with data, regression, and mathematics (statistics), which my career has given me, I can develop
-            models for data prediction, using python. Also, I have studied in Datacamp in more depth data management, data
-            visualization, and other tools for data analysis.
+            He utilizado herramientas como Excel, MySQL y Power BI para el procesamiento de datos, incluyendo ETL,
+             modelamiento y visualización. Mi experiencia me ha permitido identificar tendencias y patrones 
+             en bases de datos, los cuales he visualizado en dashboards para un monitoreo constante. 
+             A través de este enfoque, he facilitado la toma de decisiones basadas en datos confiables 
+             y relevantes.
           </p>
-          <a href="https://github.com/Plealm/Proyecto_Final_W_Analysis/tree/main/Framework_C%2B%2B8TeV"> Learn more</a>
+          <a href="#analisis"> Proyectos</a>
         </div>
         <div>
-          <i class="fa-solid fa-infinity"></i>
-          <h2> Computer Science </h2>
+          <i class="fa-solid fa-atom"></i>
+          <h2> Cientifico de Datos</h2>
           <p>
-            I have been able to participate in 3 research processes, two of them at the international level on particle physics,
-            both theoretical and experimental, where I was able to develop complex symbolic calculations using Mathematica,
-            simulations in Matlab, data sectorization in c++ and for other needs in python.
+            He aplicado algoritmos de Aprendizaje Automático, Aprendizaje Profundo e Inteligencia Artificial 
+            para categorizar empresas sólidas en las que invertir, predecir precios de casas basados en 
+            sus características y realizar una aproximación temporal del valor de las acciones. Mi enfoque 
+            en el análisis de datos y la utilización de técnicas avanzadas me ha permitido generar insights 
+            valiosos y tomar decisiones informadas en diversas áreas.
           </p>
-          <a href="https://github.com/Plealm/FEniCS_Reaktoro"> Learn more</a>
+          <a href="#ciencia"> Proyectos</a>
         </div>
 
       </div>
@@ -135,37 +147,155 @@
 
   <div id="projects">
     <div class="container">
-      <h1 class="subtitle"> My projects</h1>
+      <h1 class="subtitle"> Proyectos</h1>
+
+      <h1 id="base"> Bases de datos</h1>
       <div class="project-list">
         <div class="project">
-          <img src="./images/work1.jpeg" alt="work1">
+          <img src="./images/Doc.png" alt="work1">
           <div class="layer">
-            <h3>Product Page</h3>
-            <p>As a final project of freecodecamp course about the responsive web I developed a modest website about a hobby that I
-            enjoy anime, it is one of my first projects.</p>
-            <a href="https://plealm.github.io/product_page/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <h4>Finanzas Doctor<br>  Formularios Google a Power Bi</h4>
+            <p><br>Por medio de la recolección de datos usando google Forms, se llena una base de datos en Google Sheets
+               donde se conecta con un dashboard en Power Bi para la visualización de ganancias.</p>
+            <a href="https://app.powerbi.com/view?r=eyJrIjoiNGYyNDc0NGUtOWRiMy00Yjg5LTgwNTctMGU3MTY2MjRiZGFjIiwidCI6IjU3N2ZjMWQ4LTA5MjItNDU4ZS04N2JmLWVjNGY0NTVlYjYwMCIsImMiOjR9"><i class="fa-solid fa-arrow-up-right-from-square small-icon"></i></a>
           </div>
         </div>
         <div class="project">
-          <img src="./images/work2.jpg" alt="work2">
+          <img src="./images/recibos.png" alt="work2">
           <div class="layer">
-            <h3>Analysis Particle Collisions</h3>
-            <p>Using free data from CERN, a program was designed that using specific conditions created a sub-database which was then
-            plotted in histograms that allowed through physical knowledge to reach conclusions about the nature of the universe.</p>
-            <a href="https://github.com/Plealm/Analisis_Z_Prime"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-          </div>
-        </div>
-        <div class="project">
-            <img src="./images/work3.png" alt="work3">
-          <div class="layer">
-            <h3>Mathematic Modeling</h3>
-            <p>Employing physics equations we can describe nature and with mathematical optimization, we can analyze how to save
-            materials, improve element distributions and other means to save money and obtain the same or better results.</p>
-            <a href="https://github.com/Plealm/FEniCS_Reaktoro"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <h4>Análisis recibos <br> MySQL a Power Bi</h4>
+            <p><br>Se construyó la base relacional en MySQL, donde tambien se ingresaron los valores, para despues hacer la conexión con Power Bi. </p>
+            <a href="https://app.powerbi.com/view?r=eyJrIjoiZWU5ZmFiMmUtYWY0MC00ODMyLTgzODUtNDc0OWNkMjcyNTQ0IiwidCI6IjU3N2ZjMWQ4LTA5MjItNDU4ZS04N2JmLWVjNGY0NTVlYjYwMCIsImMiOjR9"><i class="fa-solid fa-arrow-up-right-from-square small-icon"></i></a>
           </div>
         </div>
       </div>
-      <a href="https://github.com/Plealm" class="btn">See more</a>
+
+
+      <h1 id="analisis"> <br>Análisis de datos</h1>
+      <div class="project-list">
+        <div class="project">
+          <img src="./images/Final.png" alt="work1">
+          <div class="layer">
+            <h4>Entregas de Muebles</h4>
+            <p><br>Se analizan los envios de bodegas a tiendas por su tiempo de duración, los daños de los productos, las devoluciones y registros</p>
+            <a href="https://app.powerbi.com/view?r=eyJrIjoiYzhlODQ2YWYtMTVjZC00OTkzLTgyZTAtYzlkNTlhZjhkMDFlIiwidCI6IjU3N2ZjMWQ4LTA5MjItNDU4ZS04N2JmLWVjNGY0NTVlYjYwMCIsImMiOjR9"><i class="fa-solid fa-arrow-up-right-from-square small-icon"></i></a>
+          </div>
+        </div>
+        <div class="project">
+          <img src="./images/Road.png" alt="work2">
+          <div class="layer">
+            <h4>Accidentes Vehiculares en UK</h4>
+            <p><br>Con los datos obtenidos de los accidentes de transito en Reino Unido de 2021 y 2022, se realizó un Dashboard, mostrando los datos más importantes y gráficas para el seguimiento.</p>
+            <a href="https://app.powerbi.com/view?r=eyJrIjoiM2YxMGYzMDctOGQxMS00YTg4LTk0OTUtYmI5OTNhNzU3ZDliIiwidCI6IjU3N2ZjMWQ4LTA5MjItNDU4ZS04N2JmLWVjNGY0NTVlYjYwMCIsImMiOjR9"><i class="fa-solid fa-arrow-up-right-from-square small-icon"></i></a>
+          </div>
+        </div>
+        <div class="project">
+          <img src="./images/HR.png" alt="work2">
+          <div class="layer">
+            <h4>Deserciones de la compañia</h4>
+            <p><br>Con una base de datos de los abandonos a la compañia, se crea un dashboard con el fin de encontrar patrones  dependiendo los años en la compañia, salario, etc. </p>
+            <a href="https://app.powerbi.com/view?r=eyJrIjoiZTQ3N2Y5YjQtZmZiMS00NGYwLWJjZDAtZGE3ODg3OWU4ZmQ1IiwidCI6IjU3N2ZjMWQ4LTA5MjItNDU4ZS04N2JmLWVjNGY0NTVlYjYwMCIsImMiOjR9"><i class="fa-solid fa-arrow-up-right-from-square small-icon"></i></a>
+          </div>
+        </div>
+
+        <div class="project">
+          <img src="./images/Modelation.png" alt="work2">
+          <div class="layer">
+            <h4>Modelación Matematica</h4>
+            <p><br>Empleando ecuaciones de física podemos describir la naturaleza y, mediante la optimización matemática, 
+              podemos analizar cómo ahorrar materiales, mejorar la distribución de
+               elementos y utilizar otros medios para ahorrar dinero y obtener los mismos o mejores resultados.</p>
+            <a href="https://github.com/Plealm/FEniCS_Reaktoro"><i class="fa-solid fa-arrow-up-right-from-square small-icon"></i></a>
+          </div>
+        </div>
+
+        <div class="project">
+          <img src="./images/particles1.jpg" alt="work2">
+          <div class="layer">
+            <h3>Decaimiento Z'</h3>
+            <p><br>Por medio de bases de datos gratuitas del CERN, se analizó el decaimiento del boson z'.</p>
+            <a href="https://github.com/Plealm/Analisis_Z_Prime"><i class="fa-solid fa-arrow-up-right-from-square small-icon"></i></a>
+          </div>
+        </div>
+
+        <div class="project">
+          <img src="./images/Paticles2.png" alt="work2">
+          <div class="layer">
+            <h4>Decaimiento del Boson W -> HH</h4>
+            <p><br>Usando datos del CERN se analizó el decaimiento de boson W hacia dos particlas de Highs.</p>
+            <a href="https://github.com/Plealm/Proyecto_Final_W_Analysis/tree/main/Framework_C%2B%2B8TeV"><i class="fa-solid fa-arrow-up-right-from-square small-icon"></i></a>
+          </div>
+        </div>
+
+        <div class="project">
+          <img src="./images/graficaEspectro.png" alt="work2">
+          <div class="layer">
+            <h4>Constantes ópticas en película delgadas</h4>
+            <p><br>Se determinaron las constantes ópticas para una película delgada por el método de Swanepoel.</p>
+            <a href="https://github.com/Plealm/Constantes_opticas_de_peliculas_delgadas"><i class="fa-solid fa-arrow-up-right-from-square small-icon"></i></a>
+          </div>
+        </div>
+      </div>
+
+
+      <h1 id="ciencia"> <br>Ciencia de datos</h1>
+      <div class="project-list">
+        <div class="project">
+          <img src="./images/Iris.jpeg" alt="work1">
+          <div class="layer">
+            <h4>Clasificación de Especies</h4>
+            <p><br>Se pusieron en comparación 3 algoritmos de Machine Learning y una red neuronal sencilla, 
+              en la tarea de clasificar correctamente que especie de Iris era la flor por medidas de petalo y sepalo.</p>
+            <a href="https://github.com/Plealm/Iris"><i class="fa-solid fa-arrow-up-right-from-square small-icon"></i></a>
+          </div>
+        </div>
+        <div class="project">
+          <img src="./images/Houses.jpeg" alt="work2">
+          <div class="layer">
+            <h4>Predicción Valor de Casas</h4>
+            <p><br>Con una base de datos sobre el precio de las casas en California se usó el algoritmo KNN para rellenar la información faltante 
+              y se compararon otros 4 algortimos para la prediccion de los precios de estas casas.</p>
+            <a href="https://github.com/Plealm/House_Price_Prediction"><i class="fa-solid fa-arrow-up-right-from-square small-icon"></i></a>
+          </div>
+        </div>
+        <div class="project">
+          <img src="./images/Sentiments.jpeg" alt="work2">
+          <div class="layer">
+            <h4>Clasificación de Sentimientos</h4>
+            <p><br>Usando librerias de NLP como RoBERTa se analizaron los sentimientos de los emojis presentes en una conversación propia de whatsapp.</p>
+            <a href="https://github.com/Plealm/Whatsapp_analysis"><i class="fa-solid fa-arrow-up-right-from-square small-icon"></i></a>
+          </div>
+        </div>
+        <div class="project">
+          <img src="./images/insta.jpeg" alt="work2">
+          <div class="layer">
+            <h4>Negocios en Instagram</h4>
+            <p><br>Con una base de datos de un negocio de instagram se analiza las corralaciones, para determinar la cantidad de impresiones 
+              y se usa un algortimo de machine learning para predecir las posibles impresiones de una futura publicación.</p>
+            <a href="https://github.com/Plealm/Whatsapp_analysis"><i class="fa-solid fa-arrow-up-right-from-square small-icon"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="https://github.com/Plealm" class="btn">Ver más</a>
+    </div>
+  </div>
+
+  <!------------Publicaciones-------->
+  <div id="publicaciones">
+    <div class="container">
+      <h1 class="subtitle"> Publicaciones</h1>
+      <div class="project-list">
+        <div class="project">
+          <img src="./images/articulo.png" alt="work1">
+          <div class="layer">
+            <h3>Navigating the Path to Accurate Classification: A Comparative Study on the Iris Dataset.</h3>
+            <p>En este artículo se explica detalladamente como se puede usar la base de datos Iris para comprar diferentes algoritmos de ML 
+              y la gran capacidad de las redes neuronales.</p>
+            <a href="https://medium.com/@pedroleal_76217/navigating-the-path-to-accurate-classification-a-comparative-study-on-the-iris-dataset-7b52ff6703e"><i class="fa-solid fa-arrow-up-right-from-square small-icon"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="https://medium.com/@pedroleal_76217" class="btn">Ver más</a>
     </div>
   </div>
 
@@ -174,27 +304,19 @@
     <div class="container">
       <div class="row">
         <div class="contact-left">
-          <h1 class="subtitle">Contact Me</h1>
-          <p><i class="fa-solid fa-envelope"></i>plealmprog@gmail.com</p>
+          <h1 class="subtitle">Contacto</h1>
+          <p><i class="fa-solid fa-envelope"></i>plealm@unal.edu.co</p>
           <p><i class="fa-solid fa-phone"></i> + 57 3244662161</p>
           <div class="social-icons">
             <a href="https://www.facebook.com/pedro.leal.9678/"><i class="fa-brands fa-facebook"></i></a>
             <a href="https://github.com/Plealm"><i class="fa-brands fa-github"></i></a>
             <a href="https://www.instagram.com/pedroleal293/"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/pedro-jose-leal-mesa-57b880231/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/plealm/"><i class="fa-brands fa-linkedin"></i></a>
 
           </div>
           <a href="./images/CV.pdf" download class="btn btn2">Download CV</a>
         </div>
-        <div class="contact-right">
-          <form method="POST"
-            action="https://script.google.com/macros/s/AKfycby_BgeqKaxiYwB4U5ptGRIZFWEbmbBnIjRxUFIrGlNv5DtH7d6RAdPm2g_Htx7TKKHQ/exec">
-            <input type="text" name="Name" placeholder="Your Name" required>
-            <input type="text" name="Email" placeholder="Your Email" required>
-            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-            <button type="submit" class="btn btn2">Submit</button>
-          </form>
-        </div>
+        
       </div>
     </div>
   </div>
@@ -244,9 +366,6 @@
         .catch(error => console.error('Error!', error.message))
     })
   </script>
-  
-  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-  <script src="./Js/particles.js"></script>
 
 </body>
 
