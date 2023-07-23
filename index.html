@@ -24,6 +24,7 @@
           <li> <a href="#services"> Áreas De Conocimiento </a></li>
           <li> <a href="#projects"> Proyectos </a></li>
           <li> <a href="#publicaciones"> Publicaciones </a></li>
+          <li> <a href="#certificaciones"> Certificaciones </a></li>
           <li> <a href="#contact"> Contacto </a></li>
           <i class="fas fa-times" onclick="closemenu()"></i>
         </ul>
@@ -342,6 +343,67 @@
     </div>
   </div>
 
+
+
+    <!------------Certificaciones-------->
+    <div id="certificaciones">
+      <div class="container">
+        <h1 class="subtitle">Certificaciones</h1>
+        <div class="project-list">
+          <div class="project">
+            <img src="./images/certificados/Coursera_Google_data_1.jpg" alt="work1" onclick="openImage(this)">
+          </div>
+          <div class="project">
+            <img src="./images/certificados/bootcamp_BIT.jpg" alt="work2" onclick="openImage(this)">
+          </div>
+          <div class="project">
+            <img src="./images/certificados/bootcamp_ibero.jpg" alt="work2" onclick="openImage(this)">
+          </div>
+          <div class="project">
+            <img src="./images/certificados/ciberseguridad_cisco.jpg" alt="work2" onclick="openImage(this)">
+          </div>
+          <div class="project">
+            <img src="./images/certificados/github_codigo_facilito.jpg" alt="work2" onclick="openImage(this)">
+          </div>
+          <div class="project">
+            <img src="./images/certificados/ML_codigo_facilito.jpg" alt="work2" onclick="openImage(this)">
+          </div>
+          <div class="project">
+            <img src="./images/certificados/Python avanzado_coursera.jpg" alt="work2" onclick="openImage(this)">
+          </div>
+          <div class="project">
+            <img src="./images/certificados/Sena_SQL.jpg" alt="work2" onclick="openImage(this)">
+          </div>
+          <div class="project">
+            <img src="./images/certificados/SQL_coursera.jpg" alt="work2" onclick="openImage(this)">
+          </div>
+          <div class="project">
+            <img src="./images/certificados/ai_microsoft.png" alt="work2" onclick="openImage(this)">
+          </div>
+          <div class="project">
+            <img src="./images/certificados/empresa_microsoft.png" alt="work2" onclick="openImage(this)">
+          </div>
+          <div class="project">
+            <img src="./images/certificados/microsoft_transform.png" alt="work2" onclick="openImage(this)">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="imagePopup">
+      <span class="closeBtn" onclick="closeImagePopup()">&times;</span>
+      <div id="popupContent">
+        <img id="enlargedImg" src="" alt="">
+      </div>
+    </div>
+    
+    
+    <div id="imagePopup">
+      <span class="closeBtn" onclick="closeImagePopup()">&times;</span>
+      <img id="enlargedImg" src="" alt="">
+    </div>
+    
+
   <!--Contact-->
   <div id="contact">
     <div class="container">
@@ -397,6 +459,30 @@
 
   </script>
 
+
+  <script>
+document.getElementById('imagePopup').addEventListener('click', function(event) {
+  if (event.target === this) {
+    closeImagePopup();
+  }
+});
+
+function openImage(image) {
+  var popup = document.getElementById('imagePopup');
+  var enlargedImg = document.getElementById('enlargedImg');
+  enlargedImg.src = image.src;
+  popup.style.display = 'flex';
+}
+
+function closeImagePopup() {
+  var popup = document.getElementById('imagePopup');
+  popup.style.display = 'none';
+}
+
+
+
+
+  </script>
 
   <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbxrQfEuDQlu1Rjh6w9x5rimwAhv8ndX6q5MsQEWAx1o8_GJ2zQdTvDADK9tjfFVPNPs/exec'
